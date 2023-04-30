@@ -1,0 +1,1974 @@
+login as: 211b173
+Pre-authentication banner message from server:
+| #################################################################
+| # WARNING: Unauthorized access to this system is forbidden and  #
+| # will be prosecuted to the maximum extent as per Cyber Law. All#
+| # Activities are Monitored & use of others Login is prohibited  #
+| # Attempt to harm the server / Lab / IT Resources is punishable #
+| # For any issue, contact Mr Shishir Thakur/Dr Mahesh Kumar      #
+| #################################################################
+End of banner message from server
+211b173@192.168.4.3's password:
+
+Last login: Wed Feb  1 11:30:07 2023 from 192.168.6.15
+[JUET@UnixServer ~]$ ./cpu A
+A
+A
+A
+^Z
+[1]+  Stopped                 ./cpu A
+[JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+[2] 27121
+[3] 27122
+[JUET@UnixServer ~]$ B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ B
+A
+B
+A
+B
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ A
+B
+A
+B
+A
+B
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ A
+B
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ A
+B
+ps
+  PID TTY          TIME CMD
+26546 pts/32   00:00:00 bash
+26895 pts/32   00:00:00 cpu
+27121 pts/32   00:00:04 cpu
+27122 pts/32   00:00:04 cpu
+27274 pts/32   00:00:00 ps
+[JUET@UnixServer ~]$ A
+B
+A
+B
+A
+B
+A
+B
+fg
+./cpu A
+A
+A
+B
+A
+B
+A
+A
+B
+A
+A
+B
+A
+A
+B
+A
+A
+B
+A
+A
+B
+A
+A
+B
+A
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+^C
+[JUET@UnixServer ~]$ A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+^C
+[JUET@UnixServer ~]$ A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+A
+B
+A
+fB
+gA
+
+./cpu B
+B
+fA
+g
+fg
+B
+A
+fg
+fg
+B
+A
+fg
+B
+A
+B
+A
+B
+A
+f
+gB
+
+A
+fg
+B
+A
+B
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ A
+A
+ps
+  PID TTY          TIME CMD
+26546 pts/32   00:00:00 bash
+27121 pts/32   00:00:14 cpu
+27819 pts/32   00:00:00 ps
+[JUET@UnixServer ~]$ A
+A
+kA
+illA
+A
+ A
+A
+cpA
+u
+-bash: kill: cpu: arguments must be process or job IDs
+[JUET@UnixServer ~]$ A
+A
+A
+kA
+ilA                                                                                                               A
+kiA
+llA
+A
+A
+ A
+2A
+A
+72A                                                                                                             A   A
+^C
+[JUET@UnixServer ~]$ A
+kiA
+ll A
+27A
+1A
+21
+[2]+  Terminated              ./cpu A
+[JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+[1] 28827
+[2] 28828
+[JUET@UnixServer ~]$ A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+^C
+[JUET@UnixServer ~]$ A
+B
+A
+B
+kA
+B                                                                                                                   A
+B
+A
+B
+^C
+[JUET@UnixServer ~]$ A
+B
+A
+B
+B
+A
+B
+A
+B
+A
+pB
+A
+s
+  PID TTY          TIME CMD
+26546 pts/32   00:00:00 bash
+28827 pts/32   00:00:04 cpu
+28828 pts/32   00:00:04 cpu
+28982 pts/32   00:00:00 ps
+[JUET@UnixServer ~]$ B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+A
+B
+A
+B
+A
+B
+A
+B
+kA
+iB
+llA
+B
+ 2A
+B
+8828A
+B                                                                                                                   A
+B
+7
+[JUET@UnixServer ~]$ B
+B
+kill 28827B
+B
+
+-bash: kill: (28827) - No such process
+[1]-  Terminated              ./cpu A
+[JUET@UnixServer ~]$ B
+kill 28827B
+B                                                                                                                   ^C
+[JUET@UnixServer ~]$ B
+B
+kill 28827B
+B
+^C
+[JUET@UnixServer ~]$ B
+killB
+2B
+882B
+8
+bash: kill28828: command not found...
+[JUET@UnixServer ~]$ B
+kB
+ill B
+288B
+28
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+26546 pts/32   00:00:00 bash
+29396 pts/32   00:00:00 ps
+[2]+  Terminated              ./cpu B
+[JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+[1] 29595
+[2] 29596
+[JUET@UnixServer ~]$ A
+B
+A
+B
+A
+B
+B
+A
+B
+A
+B
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ kilB
+A
+l B
+A
+2B
+A
+9B
+A
+B
+A
+595B
+A
+
+[JUET@UnixServer ~]$ B
+B
+killB
+ B
+2B
+95B
+96
+[1]-  Terminated              ./cpu A
+[2]+  Terminated              ./cpu B
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+26546 pts/32   00:00:00 bash
+30312 pts/32   00:00:00 ps
+[JUET@UnixServer ~]$ login as: 211b173
+^Z
+[1]+  Stopped                 ./cpu A
+[JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+[2] 27121
+[3] 27122
+[JUET@UnixServer ~]$ B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ B
+A
+B
+A
+B
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ A
+B
+A
+B
+A
+B
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ A
+B
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ A
+B
+ps
+  PID TTY          TIME CMD
+26546 pts/32   00:00:00 bash
+26895 pts/32   00:00:00 cpu
+27121 pts/32   00:00:04 cpu
+27122 pts/32   00:00:04 cpu
+27274 pts/32   00:00:00 ps
+[JUET@UnixServer ~]$ A
+B
+A
+B
+A
+B
+A
+B
+fg
+./cpu A
+A
+A
+B
+A
+B
+A
+A
+B
+A
+A
+B
+A
+A
+B
+A
+A
+B
+A
+A
+B
+A
+A
+B
+A
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+^C
+[JUET@UnixServer ~]$ A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+^C
+[JUET@UnixServer ~]$ A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+A
+B
+A
+fB
+gA
+
+./cpu B
+B
+fA
+g
+fg
+B
+A
+fg
+fg
+B
+A
+fg
+B
+A
+B
+A
+B
+A
+f
+gB
+
+A
+fg
+B
+A
+B
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ A
+A
+ps
+  PID TTY          TIME CMD
+26546 pts/32   00:00:00 bash
+27121 pts/32   00:00:14 cpu
+27819 pts/32   00:00:00 ps
+[JUET@UnixServer ~]$ A
+A
+kA
+illA
+A
+ A
+A
+cpA
+u
+-bash: kill: cpu: arguments must be process or job IDs
+[JUET@UnixServer ~]$ A
+A
+A
+kA
+ilA                                                                                                               A
+kiA
+llA
+A
+A
+ A
+2A
+A
+72A                                                                                                             A   A
+^C
+[JUET@UnixServer ~]$ A
+kiA
+ll A
+27A
+1A
+21
+[2]+  Terminated              ./cpu A
+[JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+[1] 28827
+[2] 28828
+[JUET@UnixServer ~]$ A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+^C
+[JUET@UnixServer ~]$ A
+B
+A
+B
+kA
+B                                                                                                                   A
+B
+A
+B
+^C
+[JUET@UnixServer ~]$ A
+B
+A
+B
+B
+A
+B
+A
+B
+A
+pB
+A
+s
+  PID TTY          TIME CMD
+26546 pts/32   00:00:00 bash
+28827 pts/32   00:00:04 cpu
+28828 pts/32   00:00:04 cpu
+28982 pts/32   00:00:00 ps
+[JUET@UnixServer ~]$ B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+A
+B
+A
+B
+A
+B
+A
+B
+kA
+iB
+llA
+B
+ 2A
+B
+8828A
+B                                                                                                                   A
+B
+7
+[JUET@UnixServer ~]$ B
+B
+kill 28827B
+B
+
+-bash: kill: (28827) - No such process
+[1]-  Terminated              ./cpu A
+[JUET@UnixServer ~]$ B
+kill 28827B
+B                                                                                                                   ^C
+[JUET@UnixServer ~]$ B
+B
+kill 28827B
+B
+^C
+[JUET@UnixServer ~]$ B
+killB
+2B
+882B
+8
+bash: kill28828: command not found...
+[JUET@UnixServer ~]$ B
+kB
+ill B
+288B
+28
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+26546 pts/32   00:00:00 ba[JUET@UnixServer ~]$ Pre-authentication banner message from server:
+sh
+29396 pts/32   00:00:00 ps
+[2]+  Terminated bash: Pre-authentication: command not found...
+[JUET@UnixServer ~]$ | #################################################################
+-bash: syntax error near unexpected token `|'
+[JUET@UnixServer ~]$ | # WARNING: Unauthorized access to this system is forbidden and  #
+-bash: syntax error near unexpected token `|'
+[JUET@UnixServer ~]$ | # will be prosecuted to the maximum extent as per Cyber Law. All#
+-bash: syntax error near unexpected token `|'
+[JUET@UnixServer ~]$ | # Activities are Monitored & use of others Login is prohibited  #
+-bash: syntax error near unexpected token `|'
+[JUET@UnixServer ~]$ | # Attempt to harm the server / Lab / IT Resources is punishable #
+-bash: syntax error near unexpected token `|'
+[JUET@UnixServer ~]$ | # For any issue, contact Mr Shishir Thakur/Dr Mahesh Kumar      #
+-bash: syntax error near unexpected token `|'
+[JUET@UnixServer ~]$ | #################################################################
+-bash: syntax error near unexpected token `|'
+[JUET@UnixServer ~]$ End of banner message from server
+             ./cpu B
+[JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+[1] 29595
+[2] 29596
+[JUET@UnixServer ~]$ A
+B
+A
+B
+A
+B
+B
+A
+B
+A
+B
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ kilB
+A
+l B
+A
+2B
+A
+9B
+A
+B
+A
+595B
+A
+
+[JUET@UnixServer ~]$ B
+B
+killB
+ B
+2B
+95B
+96
+[1]-  Terminated              ./cpu A
+[2]+  Terminated              ./cpu B
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+26546 pts/32   00:00:00 bash
+30312 pts/32   00:00:00 ps
+[JUET@UnixServer ~]$
+bash: End: command not found...
+[JUET@UnixServer ~]$ 211b173@192.168.4.3's password:
+>
+> Last login: Wed Feb  1 11:30:07 2023 from 192.168.6.15
+> [JUET@UnixServer ~]$ ./cpu A
+> A
+> A
+> A
+> ^Z
+> [1]+  Stopped                 ./cpu A
+> [JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+> [2] 27121
+> [3] 27122
+> [JUET@UnixServer ~]$ B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> ^C
+> [JUET@UnixServer ~]$ B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> ^C
+> [JUET@UnixServer ~]$ A
+> B
+> A
+> B
+> A
+> B
+> ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ A
+> B
+> ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ A
+> B
+> ps
+>   PID TTY          TIME CMD
+> 26546 pts/32   00:00:00 bash
+> 26895 pts/32   00:00:00 cpu
+> 27121 pts/32   00:00:04 cpu
+> 27122 pts/32   00:00:04 cpu
+> 27274 pts/32   00:00:00 ps
+> [JUET@UnixServer ~]$ A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> fg
+> ./cpu A
+> A
+> A
+> B
+> A
+> B
+> A
+> A
+> B
+> A
+> A
+> B
+> A
+> A
+> B
+> A
+> A
+> B
+> A
+> A
+> B
+> A
+> A
+> B
+> A
+> A
+> B
+> A
+> ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ B
+> ^C
+> [JUET@UnixServer ~]$ A
+> ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ B
+> ^C
+> [JUET@UnixServer ~]$ A
+> ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ B
+> A
+> ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ B
+> A
+> ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ B
+> A
+> ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ ^C
+> [JUET@UnixServer ~]$ B
+> A
+> B
+> A
+> fB
+> gA
+>
+> ./cpu B
+> B
+> fA
+> g
+> fg
+> B
+> A
+> fg
+> fg
+> B
+> A
+> fg
+> B
+> A
+> B
+> A
+> B
+> A
+> f
+> gB
+>
+> A
+> fg
+> B
+> A
+> B
+> A
+> B
+> A
+> ^C
+> [JUET@UnixServer ~]$ A
+> A
+> ps
+>   PID TTY          TIME CMD
+> 26546 pts/32   00:00:00 bash
+> 27121 pts/32   00:00:14 cpu
+> 27819 pts/32   00:00:00 ps
+> [JUET@UnixServer ~]$ A
+> A
+> kA
+> illA
+> A
+>  A
+> A
+> cpA
+> u
+> -bash: kill: cpu: arguments must be process or job IDs
+> [JUET@UnixServer ~]$ A
+> A
+> A
+> kA
+> ilA                                                                                                               A
+> kiA
+> llA
+> A
+> A
+>  A
+> 2A
+> A
+> 72A                                                                                                             A   A
+> ^C
+> [JUET@UnixServer ~]$ A
+> kiA
+> ll A
+> 27A
+> 1A
+> 21
+> [2]+  Terminated              ./cpu A
+> [JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+> [1] 28827
+> [2] 28828
+> [JUET@UnixServer ~]$ A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> ^C
+> [JUET@UnixServer ~]$ A
+> B
+> A
+> B
+> kA
+> B                                                                                                                   A
+> B
+> A
+> B
+> ^C
+> [JUET@UnixServer ~]$ A
+> B
+> A
+> B
+> B
+> A
+> B
+> A
+> B
+> A
+> pB
+> A
+> s
+>   PID TTY          TIME CMD
+> 26546 pts/32   00:00:00 bash
+> 28827 pts/32   00:00:04 cpu
+> 28828 pts/32   00:00:04 cpu
+> 28982 pts/32   00:00:00 ps
+> [JUET@UnixServer ~]$ B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> kA
+> iB
+> llA
+> B
+>  2A
+> B
+> 8828A
+> B                                                                                                                   A
+> B
+> 7
+> [JUET@UnixServer ~]$ B
+> B
+> kill 28827B
+> B
+>
+> -bash: kill: (28827) - No such process
+> [1]-  Terminated              ./cpu A
+> [JUET@UnixServer ~]$ B
+> kill 28827B
+> B                                                                                                                   ^C
+> [JUET@UnixServer ~]$ B
+> B
+> kill 28827B
+> B
+> ^C
+> [JUET@UnixServer ~]$ B
+> killB
+> 2B
+> 882B
+> 8
+> bash: kill28828: command not found...
+> [JUET@UnixServer ~]$ B
+> kB
+> ill B
+> 288B
+> 28
+> [JUET@UnixServer ~]$ ps
+>   PID TTY          TIME CMD
+> 26546 pts/32   00:00:00 bash
+> 29396 pts/32   00:00:00 ps
+> [2]+  Terminated              ./cpu B
+> [JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+> [1] 29595
+> [2] 29596
+> [JUET@UnixServer ~]$ A
+> B
+> A
+> B
+> A
+> B
+> B
+> A
+> B
+> A
+> B
+> A
+> B
+> A
+> ^C
+> [JUET@UnixServer ~]$ kilB
+> A
+> l B
+> A
+> 2B
+> A
+> 9B
+> A
+> B
+> A
+> 595B
+> A
+>
+> [JUET@UnixServer ~]$ B
+> B
+> killB
+>  B
+> 2B
+> 95B
+> 96
+> [1]-  Terminated              ./cpu A
+> [2]+  Terminated              ./cpu B
+> [JUET@UnixServer ~]$ ps
+>   PID TTY          TIME CMD
+> 26546 pts/32   00:00:00 bash
+> 30312 pts/32   00:00:00 ps
+> [JUET@UnixServer ~]$
+>
+
+
+login as: 211b173
+Pre-authentication banner message from server:
+| #################################################################
+| # WARNING: Unauthorized access to this system is forbidden and  #
+| # will be prosecuted to the maximum extent as per Cyber Law. All#
+| # Activities are Monitored & use of others Login is prohibited  #
+| # Attempt to harm the server / Lab / IT Resources is punishable #
+| # For any issue, contact Mr Shishir Thakur/Dr Mahesh Kumar      #
+| #################################################################
+End of banner message from server
+211b173@192.168.4.3's password:
+
+Last login: Wed Feb  1 11:36:07 2023 from 192.168.6.15
+[JUET@UnixServer ~]$ ls
+common.h  cpu  cpu.c
+[JUET@UnixServer ~]$ ls -l
+total 20
+-rw-r--r--. 1 211b173 CSE-21   414 Feb  1 11:21 common.h
+-rwxr-xr-x. 1 211b173 CSE-21 11448 Feb  1 11:24 cpu
+-rw-r--r--. 1 211b173 CSE-21   272 Feb  1 11:22 cpu.c
+[JUET@UnixServer ~]$ ls -L
+common.h  cpu  cpu.c
+[JUET@UnixServer ~]$ ls -A
+.bash_history  .bash_profile  common.h  cpu    .esd_auth  .viminfo
+.bash_logout   .bashrc        .config   cpu.c  .mozilla   .zshrc
+[JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+[1] 32527
+[2] 32528
+[JUET@UnixServer ~]$ B
+A
+B
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ B
+A
+B
+A
+killA
+B
+ A
+B
+2A
+B
+A
+B
+^C
+[JUET@UnixServer ~]$ killA
+B
+ A
+B
+A
+B
+32A
+B
+527A
+
+[JUET@UnixServer ~]$ B
+B
+B
+^C
+[1]-  Terminated              ./cpu A
+[JUET@UnixServer ~]$ kilB
+l B
+B
+32B
+52B
+8
+[2]+  Terminated              ./cpu B
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+32001 pts/54   00:00:00 bash
+32709 pts/54   00:00:00 ps
+[JUET@UnixServer ~]$
+
+
+login as: 211b173
+Pre-authentication banner message from server:
+| #################################################################
+| # WARNING: Unauthorized access to this system is forbidden and  #
+| # will be prosecuted to the maximum extent as per Cyber Law. All#
+| # Activities are Monitored & use of others Login is prohibited  #
+| # Attempt to harm the server / Lab / IT Resources is punishable #
+| # For any issue, contact Mr Shishir Thakur/Dr Mahesh Kumar      #
+| #################################################################
+End of banner message from server
+211b173@192.168.4.3's password:
+
+Last login: Wed Feb  1 11:36:07 2023 from 192.168.6.15
+[JUET@UnixServer ~]$ ls
+common.h  cpu  cpu.c
+[JUET@UnixServer ~]$ ls -l
+total 20
+-rw-r--r--. 1 211b173 CSE-21   414 Feb  1 11:21 common.h
+-rwxr-xr-x. 1 211b173 CSE-21 11448 Feb  1 11:24 cpu
+-rw-r--r--. 1 211b173 CSE-21   272 Feb  1 11:22 cpu.c
+[JUET@UnixServer ~]$ ls -L
+common.h  cpu  cpu.c
+[JUET@UnixServer ~]$ ls -A
+.bash_history  .bash_profile  common.h  cpu    .esd_auth  .viminfo
+.bash_logout   .bashrc        .config   cpu.c  .mozilla   .zshrc
+[JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+[1] 32527
+[2] 32528
+[JUET@UnixServer ~]$ B
+A
+B
+A
+B
+A
+^C
+[JUET@UnixServer ~]$ B
+A
+B
+A
+killA
+B
+ A
+B
+2A
+B
+A
+B
+^C
+[JUET@UnixServer ~]$ killA
+B
+ A
+B
+A
+B
+32A
+B
+527A
+
+[JUET@UnixServer ~]$ B
+B
+B
+^C
+[1]-  Terminated              ./cpu A
+[JUET@UnixServer ~]$ kilB
+l B
+B
+32B
+52B
+8
+[2]+  Terminated              ./cpu B
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+32001 pts/54   00:00:00 bash
+32709 pts/54   00:00:00 ps
+[JUET@UnixServer ~]$ rps
+bash: rps: command not found...
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 1486 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 1536 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ kill 1536
+-bash: kill: (1536) - No such process
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 1691 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+[1] 2876
+[2] 2877
+[JUET@UnixServer ~]$ A
+B
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ A
+B
+B
+A
+^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ B
+A
+B
+A
+B
+A
+ps
+  PID TTY          TIME CMD
+ 2876 pts/54   00:00:00 cpu
+ 2877 pts/54   00:00:00 cpu
+ 2939 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ B
+A
+B
+A
+kiB
+lA
+lB
+ A
+2B
+A
+877B
+
+[JUET@UnixServer ~]$ A
+A
+^C
+[2]+  Terminated              ./cpu B
+[JUET@UnixServer ~]$ killA
+ A
+2A
+87A
+6
+[JUET@UnixServer ~]$ ^C
+[1]+  Terminated              ./cpu A
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 3066 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 3733 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ ls
+common.h  cpu  cpu.c
+[JUET@UnixServer ~]$ ls -l
+total 20
+-rw-r--r--. 1 211b173 CSE-21   414 Feb  1 11:21 common.h
+-rwxr-xr-x. 1 211b173 CSE-21 11448 Feb  1 11:24 cpu
+-rw-r--r--. 1 211b173 CSE-21   272 Feb  1 11:22 cpu.c
+[JUET@UnixServer ~]$ ls -x
+common.h  cpu  cpu.c
+[JUET@UnixServer ~]$ ls -a
+.   .bash_history  .bash_profile  common.h  cpu    .esd_auth  .viminfo
+..  .bash_logout   .bashrc        .config   cpu.c  .mozilla   .zshrc
+[JUET@UnixServer ~]$ ls -A
+.bash_history  .bash_profile  common.h  cpu    .esd_auth  .viminfo
+.bash_logout   .bashrc        .config   cpu.c  .mozilla   .zshrc
+[JUET@UnixServer ~]$ .
+-bash: .: filename argument required
+.: usage: . filename [arguments]
+[JUET@UnixServer ~]$ cd .
+[JUET@UnixServer ~]$ pwd .
+/home/CSE/CSE-21/211b173
+[JUET@UnixServer ~]$ pwd
+/home/CSE/CSE-21/211b173
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 4512 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ gdb
+GNU gdb (GDB) Red Hat Enterprise Linux 8.2-5.el8
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+(gdb) Quit
+(gdb) Quit
+(gdb)
+[1]+  Stopped                 gdb
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 4513 pts/54   00:00:00 gdb
+ 4544 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 4513 pts/54   00:00:00 gdb
+ 4607 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ ^C
+[JUET@UnixServer ~]$ man man
+
+[2]+  Stopped                 man man
+[JUET@UnixServer ~]$ man(6)
+-bash: syntax error near unexpected token `6'
+[JUET@UnixServer ~]$ man man(6)
+-bash: syntax error near unexpected token `('
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 4513 pts/54   00:00:00 gdb
+ 4967 pts/54   00:00:00 man
+ 4980 pts/54   00:00:00 less
+ 5280 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ ./cpu A B
+usage: cpu <string>
+[JUET@UnixServer ~]$ ./cpu A B V
+usage: cpu <string>
+[JUET@UnixServer ~]$ ./cpu
+usage: cpu <string>
+[JUET@UnixServer ~]$ man bg
+[JUET@UnixServer ~]$ man fg
+[JUET@UnixServer ~]$ ./cpu A
+A
+bg
+A
+A
+A
+^Z
+[3]+  Stopped                 ./cpu A
+[JUET@UnixServer ~]$ bg
+[3]+ ./cpu A &
+[JUET@UnixServer ~]$ A
+A
+A
+A
+A
+A
+^C
+[JUET@UnixServer ~]$ A
+A
+fA
+g
+man man
+[JUET@UnixServer ~]$ A
+fg
+gdb
+A
+A
+A
+A
+ps
+ps
+Undefined command: "ps".  Try "help".
+(gdb) A
+A
+
+[1]+  Stopped                 gdb
+[JUET@UnixServer ~]$ A
+pA
+s
+  PID TTY          TIME CMD
+ 4513 pts/54   00:00:00 gdb
+ 6525 pts/54   00:00:02 cpu
+ 6568 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ A
+kA
+ill A
+A
+A
+A
+A
+6525A
+
+[JUET@UnixServer ~]$ ./cpu A
+A
+A
+A
+bg
+A
+A
+A
+fg
+A
+A
+^Z[3]   Terminated              ./cpu A
+
+[4]+  Stopped                 ./cpu A
+[JUET@UnixServer ~]$ fg
+./cpu A
+A
+A
+A
+A
+A
+^Z
+[4]+  Stopped                 ./cpu A
+[JUET@UnixServer ~]$ bg
+[4]+ ./cpu A &
+A
+[JUET@UnixServer ~]$ A
+A
+A
+A
+bg
+[1]+ gdb &
+[JUET@UnixServer ~]$ A
+fg
+./cpu A
+A
+fgA
+
+^Z
+[1]-  Stopped                 gdb
+
+[4]+  Stopped                 ./cpu A
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 4513 pts/54   00:00:00 gdb
+ 6698 pts/54   00:00:02 cpu
+ 6855 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ kill 6698
+[JUET@UnixServer ~]$ kill 4513
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 4513 pts/54   00:00:00 gdb
+ 6698 pts/54   00:00:02 cpu
+ 6922 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ kill 6922
+-bash: kill: (6922) - No such process
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 4513 pts/54   00:00:00 gdb
+ 6698 pts/54   00:00:02 cpu
+ 6977 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+[5] 7067
+[6] 7068
+[JUET@UnixServer ~]$ B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+fB
+A
+g
+./cpu A
+Terminated
+[JUET@UnixServer ~]$ B
+A
+A
+B
+fg
+gdb
+^Z
+[1]+  Stopped                 gdb
+[JUET@UnixServer ~]$ A
+B
+B
+A
+fg
+gdb
+^Z
+[1]+  Stopped                 gdb
+[JUET@UnixServer ~]$ A
+B
+B
+A
+A
+B
+bg
+[1]+ gdb &
+[JUET@UnixServer ~]$ A
+B
+A
+B
+fg
+gdb
+^Z
+[1]+  Stopped                 gdb
+[JUET@UnixServer ~]$ A
+B
+A
+B
+fg
+gdb
+A
+^Z
+[1]+  Stopped                 gdb
+[JUET@UnixServer ~]$ B
+A
+B
+bA
+gB
+
+[1]+ gdb &
+[JUET@UnixServer ~]$ A
+B
+
+
+[1]+  Stopped                 gdb
+[JUET@UnixServer ~]$ A
+B
+A
+B
+A
+B
+^C
+[JUET@UnixServer ~]$ A
+B
+A
+B
+bg
+[1]+ gdb &
+[JUET@UnixServer ~]$ A
+B
+bA
+gB
+
+[1]+ gdb &
+[JUET@UnixServer ~]$ A
+B
+bgA
+B
+A
+bB
+g
+bash: bgbg: command not found...
+^Z
+[1]-  Stopped                 gdb
+
+[7]+  Stopped                 bgbg
+[JUET@UnixServer ~]$ A
+B
+A
+B
+bg
+[7]+ bgbg &
+[JUET@UnixServer ~]$ A
+
+[1]+  Stopped                 gdb
+B
+A
+B
+bg
+[1]+ gdb &
+[7]   Exit 127                bgbg
+[JUET@UnixServer ~]$ A
+B
+A
+B
+A
+B
+bg
+[1]+ gdb &
+[JUET@UnixServer ~]$ A
+B
+A
+B
+fgA
+B
+
+gdb
+^Z
+[1]+  Stopped                 gdb
+[JUET@UnixServer ~]$ A
+B
+B
+A
+ps
+  PID TTY          TIME CMD
+ 4513 pts/54   00:00:00 gdb
+ 7067 pts/54   00:00:05 cpu
+ 7068 pts/54   00:00:05 cpu
+ 7124 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ B
+A
+kill A
+B
+A
+B
+A
+B
+706A
+B
+7
+[JUET@UnixServer ~]$ B
+B
+killB
+ B
+B
+7068
+[5]   Terminated              ./cpu A
+[JUET@UnixServer ~]$ ^C
+[6]-  Terminated              ./cpu B
+[JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+[2] 7300
+[3] 7301
+[JUET@UnixServer ~]$ B
+A
+B
+A
+A
+B
+bgA
+B
+
+[1]+ gdb &
+[JUET@UnixServer ~]$ A
+B
+A
+B
+jopbsA
+B                                                                                                                     A
+B
+^C
+
+[1]+  Stopped                 gdb
+[JUET@UnixServer ~]$ A
+jB
+obs
+[1]+  Stopped                 gdb
+[2]   Running                 ./cpu A &
+[3]-  Running                 ./cpu B &
+[JUET@UnixServer ~]$ A
+B
+A
+B
+A
+B
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+bgB
+ A
+2
+-bash: bg: job 2 already in background
+[JUET@UnixServer ~]$ B
+A
+B
+A
+B
+A
+bg B
+A
+3
+-bash: bg: job 3 already in background
+[JUET@UnixServer ~]$ B
+A
+B
+A
+fg B
+A
+2
+./cpu A
+B
+A
+^Z
+[2]+  Stopped                 ./cpu A
+[JUET@UnixServer ~]$ B
+B
+fg B
+3
+./cpu B
+^Z
+[3]+  Stopped                 ./cpu B
+[JUET@UnixServer ~]$
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 4513 pts/54   00:00:00 gdb
+ 7300 pts/54   00:00:03 cpu
+ 7301 pts/54   00:00:04 cpu
+ 7367 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ jobs
+[1]   Stopped                 gdb
+[2]-  Stopped                 ./cpu A
+[3]+  Stopped                 ./cpu B
+[JUET@UnixServer ~]$ ps
+  PID TTY          TIME CMD
+ 4513 pts/54   00:00:00 gdb
+ 7300 pts/54   00:00:03 cpu
+ 7301 pts/54   00:00:04 cpu
+ 7518 pts/54   00:00:00 ps
+32001 pts/54   00:00:00 bash
+[JUET@UnixServer ~]$ jobs
+[1]   Stopped                 gdb
+[2]-  Stopped                 ./cpu A
+[3]+  Stopped                 ./cpu B
+[JUET@UnixServer ~]$ bg
+[3]+ ./cpu B &
+[JUET@UnixServer ~]$ B
+B
+B
+jB
+obs
+[1]-  Stopped                 gdb
+[2]+  Stopped                 ./cpu A
+[3]   Running                 ./cpu B &
+[JUET@UnixServer ~]$ B
+B
+fg 3B
+
+./cpu B
+^Z
+[3]+  Stopped                 ./cpu B
+[JUET@UnixServer ~]$ ./cpu A & ./cpu B &\
+> ^C
+[JUET@UnixServer ~]$ ./cpu A & ./cpu B &
+[4] 8039
+[5] 8040
+[JUET@UnixServer ~]$ A
+B
+A
+B
+A
+B
+A
+jB
+obs
+[1]   Stopped                 gdb
+[2]-  Stopped                 ./cpu A
+[3]+  Stopped                 ./cpu B
+[4]   Running                 ./cpu A &
+[5]   Running                 ./cpu B &
+[JUET@UnixServer ~]$ A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+fgA
+B
+ 3B
+A
+
+./cpu B
+B
+B
+A
+B
+B
+A
+B
+^Z
+[3]+  Stopped                 ./cpu B
+[JUET@UnixServer ~]$ B
+A
+fgB
+A
+ 4
+./cpu A
+B
+A
+B
+^Z
+[4]+  Stopped                 ./cpu A
+[JUET@UnixServer ~]$ B
+B
+fg B
+5
+./cpu B
+B
+B
+^Z
+[5]+  Stopped                 ./cpu B
+[JUET@UnixServer ~]$ jobs
+[1]   Stopped                 gdb
+[2]   Stopped                 ./cpu A
+[3]   Stopped                 ./cpu B
+[4]-  Stopped                 ./cpu A
+[5]+  Stopped                 ./cpu B
+[JUET@UnixServer ~]$

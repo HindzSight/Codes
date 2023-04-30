@@ -1,0 +1,244 @@
+//First Attempt
+To prove that Lucy is not a friend of John using first-order predicate logic and resolution, we can represent the given statements in terms of logical propositions using predicate symbols, constants, variables, and logical connectives. Let's define the following predicate symbols and constants:
+
+P(x): x is a person
+Pr(x): x is a professor
+D(x): x is a dean
+F(x, y): x considers y a friend
+C(x, y): x criticizes y
+Using these symbols and constants, we can represent the given statements as follows:
+
+∀x (Pr(x) → P(x)) (All professors are people.)
+D(j) ∧ Pr(j) (John is the dean and a professor.)
+∀x (D(x) → Pr(x)) (Deans are professors.)
+∀x [(Pr(x) ∧ x ≠ j) → (F(x, j) ∨ ¬F(x, j))]
+(All professors consider John a friend or don't know him.)
+∀x ∃y F(x, y) (Everyone is a friend of someone.)
+∀x ∀y [(F(x, y) ∧ x ≠ y) → ¬C(x, y)]
+(People only criticize people that are not their friends.)
+C(l, j) (Lucy criticized John.)
+To prove that Lucy is not a friend of John, we can use resolution, a rule of inference in propositional logic. Resolution involves finding a contradiction by resolving two clauses that contain complementary literals, i.e., one literal is the negation of the other. We can convert the above statements into conjunctive normal form (CNF) and then apply resolution to derive a contradiction.
+
+The CNF of the above statements is as follows:
+
+¬Pr(x) ∨ P(x)
+D(j), Pr(j)
+¬D(x) ∨ Pr(x)
+¬Pr(x) ∨ F(x, j), ¬F(x, j) ∨ F(x, j)
+F(x, y)
+¬F(x, y) ∨ ¬C(x, y)
+C(l, j)
+To apply resolution, we first negate the conclusion, i.e., assume that Lucy is a friend of John:
+
+F(l, j)
+Then we look for clauses that contain complementary literals and resolve them. For example, we can resolve clauses 4 and 8 by unifying F(l, j) and ¬F(x, j) to get:
+
+¬Pr(x) ∨ F(l, j)
+We can then resolve clauses 1 and 9 by unifying ¬Pr(x) and P(l) to get:
+
+F(l, j)
+Since clause 10 is the same as clause 8, we have not derived a contradiction. Therefore, assuming that Lucy is a friend of John does not lead to a contradiction.
+
+Next, we can try assuming the negation of the conclusion, i.e., that Lucy is not a friend of John:
+
+¬F(l, j)
+We can resolve clauses 4 and 8 by unifying ¬F(l, j) and F(x, j) to get:
+
+¬Pr(x)
+We can then resolve clauses 1 and 9 by unifying ¬Pr(x) and Pr(l) to get:
+
+¬F(l, j)
+Since clause 10 is the same as clause 8 negated, we have derived a contradiction. Therefore, assuming that Lucy is not a friend of John leads to a contradiction, and we can conclude that Lucy is not a friend of John.
+
+
+
+// Second Attempt 
+To prove that Lucy is not a friend of John using first-order predicate logic and resolution, we can use the following steps:
+
+Let:
+
+P(x): "x is a person"
+Pr(x): "x is a professor"
+D(x): "x is a dean"
+F(x, y): "x is a friend of y"
+C(x, y): "x criticizes y"
+From the given statements, we know that:
+
+∀x(Pr(x) → P(x)) // All professors are people.
+Pr(Lucy) // Lucy is a professor.
+P(John) ∧ Pr(John) ∧ D(John) // John is a person, a dean, and a professor.
+∀x(Pr(x) ∧ D(x) → Pr(x)) // Deans are professors.
+∀x(Pr(x) → (F(x, John) ∨ ¬F(x, John))) // All professors consider John a friend or don't know him.
+∀x∃yF(x, y) // Everyone is a friend of someone.
+∀x∀y(C(x, y) → ¬F(x, y))) // People only criticize people that are not their friends.
+C(Lucy, John) // Lucy criticized John.
+To prove that Lucy is not a friend of John, we can assume the opposite, i.e., F(Lucy, John), and try to derive a contradiction.
+
+Using resolution, we can convert the statements and the negation of the conclusion into clauses and then use resolution inference rules to derive a contradiction.
+
+The negation of the conclusion is ¬F(Lucy, John), which we can convert to the following clause:
+
+¬F(Lucy, John)
+Converting the other statements to clauses, we get:
+
+¬P(x) ∨ Pr(x) (from 1)
+Pr(Lucy) (from 2)
+P(John) (from 3)
+Pr(John) (from 3)
+D(John) (from 3)
+¬Pr(x) ∨ Pr(x) (from 4)
+F(x, John) ∨ ¬F(x, John) (from 5)
+∃y F(x, y) (from 6)
+C(x, y) ∨ ¬F(x, y) (from 7)
+¬C(Lucy, John) (from 8)
+Now, we can apply resolution inference rules to these clauses. The goal is to derive an empty clause, which indicates a contradiction and hence proves that our assumption (F(Lucy, John)) is false.
+
+The following are the steps for applying resolution:
+
+From clause 5 and 6, we get:
+F(Lucy, John) ∨ ¬F(Lucy, John, z)
+From clause 8 and z = John, we get:
+¬C(Lucy, John)
+From clause 7 and z = John, we get:
+F(x, John) ∨ ¬F(x, John) ∨ ¬C(x, John)
+From clauses 1 and 2, we get:
+Pr(Lucy)
+From clauses 1 and 3, we get:
+P(John)
+From clauses 3 and 4, we get:
+Pr(John)
+From clauses 3 and 5, we get:
+D(John)
+From clauses 4, 6, and 7, we get:
+Pr(John) ∧ D(
+
+
+// 3rd Attempt
+
+
+To prove that Lucy is not a friend of John using first-order predicate logic and resolution, we can represent the given statements as follows:
+
+Let P(x) be "x is a professor"
+Let D(x) be "x is a dean"
+Let F(x,y) be "x is a friend of y"
+Let C(x,y) be "x criticizes y"
+Let l = Lucy and j = John.
+
+P(l)
+∀x P(x) → ∀x (P(x) ∧ ¬D(x))
+D(j) ∧ P(j)
+∀x P(x) → (F(x,j) ∨ ¬F(x,j))
+∀x ∃y F(x,y)
+∀x ∀y (F(x,y) → (F(y,x) ∧ (x ≠ y)))
+∀x ∀y ((F(x,y) ∧ F(y,x)) → (x = y))
+∀x ∀y ((F(x,y) ∧ ¬F(x,x)) → C(x,y))
+C(l,j)
+To prove that Lucy is not a friend of John, we can use resolution to derive a contradiction. We begin by converting the statements into clauses and negating the conclusion:
+
+P(l)
+¬P(x) ∨ (P(x) ∧ ¬D(x))
+D(j) ∧ P(j)
+¬P(x) ∨ F(x,j) ∨ ¬F(x,j)
+F(x,f(x))
+F(x,y) → (F(y,x) ∧ (x ≠ y))
+(F(x,y) ∧ F(y,x)) → (x = y)
+(F(x,y) ∧ ¬F(x,x)) → C(x,y)
+¬C(l,j)
+We can then use resolution to derive a contradiction:
+
+P(j) ∧ ¬D(j) (from 2 and 3 by resolution)
+¬F(l,j) ∧ F(l,f(l)) (from 4 and 5 by resolution)
+F(j,l) ∧ (l ≠ j) (from 6 and 10 by resolution)
+¬F(j,l) (from 7 and 12 by resolution)
+C(l,j) (from 8 and 11 by resolution)
+C(l,j) ∧ ¬C(l,j) (from 9 and 14 by resolution)
+Since we have derived a contradiction, we can conclude that the assumption that Lucy is a friend of John is false, and therefore, Lucy is not a friend of John.
+
+
+
+
+// Backward Chaining 
+To solve the same using first-order predicate logic and backward chaining, we can use the same set of statements and conclusion as in the previous question:
+
+P(l)
+∀x P(x) → ∀x (P(x) ∧ ¬D(x))
+D(j) ∧ P(j)
+∀x P(x) → (F(x,j) ∨ ¬F(x,j))
+∀x ∃y F(x,y)
+∀x ∀y (F(x,y) → (F(y,x) ∧ (x ≠ y)))
+∀x ∀y ((F(x,y) ∧ F(y,x)) → (x = y))
+∀x ∀y ((F(x,y) ∧ ¬F(x,x)) → C(x,y))
+C(l,j)
+To use backward chaining, we start with the goal of proving that Lucy is not a friend of John and work backwards from there. We can start with statement 9, which tells us that Lucy criticizes John:
+
+C(l,j)
+From statement 8, we know that if x is a friend of y but x is not equal to y, then x criticizes y:
+
+∀x ∀y ((F(x,y) ∧ ¬F(x,x)) → C(x,y))
+Therefore, we can use backward chaining to infer that Lucy is a friend of someone who is not herself:
+
+F(l,x) ∧ ¬F(l,l) → C(l,x) (substitute x = j)
+F(l,x) ∧ F(x,l) ∧ (x ≠ l) → (l = x) (from 6)
+F(l,x) ∧ F(x,l) ∧ (x ≠ l) (substitute x = f(l))
+F(l,f(l)) (from 5)
+Therefore, we have inferred that Lucy is a friend of someone (f(l)) who is not herself (l). From statement 4, we know that if someone is a professor, then they either consider the dean a friend or do not know the dean:
+
+∀x P(x) → (F(x,j) ∨ ¬F(x,j))
+From statement 1, we know that Lucy is a professor:
+
+P(l)
+Therefore, we can use backward chaining to infer that Lucy either considers John a friend or does not know him:
+
+P(l) → (F(l,j) ∨ ¬F(l,j))
+From the previous step, we know that Lucy is a friend of someone who is not herself, so we can infer that Lucy does not consider John a friend:
+
+F(l,f(l)) ∧ P(l) → (F(l,j) ∨ ¬F(l,j))
+D(j) ∧ P(j) (from 2 by universal instantiation)
+∀x P(x) → ∀x (P(x) ∧ ¬D(x))
+P(l) (given)
+Conclusion: ¬F(l,j)
+Therefore, we have proven using backward chaining that Lucy is not a friend of John.
+
+
+//Aliter 
+Using the given statements, we want to prove that Lucy is not a friend of John.
+
+We can start with the negation of the conclusion we want to prove:
+
+¬is-friend-of(John, lucy)
+Using backward chaining, we can derive new facts until we can confirm the negation of the conclusion:
+
+From statement 6, we know that if someone criticizes another person, they are not friends:
+
+is-person(lucy) ∧ is-person(John) ∧ criticize(lucy, John) → ¬is-friend-of(John, lucy)
+From statement 5, we know that everyone is a friend of someone:
+
+∀x ∃y is-friend-of(y, x)
+From statement 4, we know that if someone is a professor and someone else is a dean, then the dean is a friend of the professor or the professor doesn't know the dean:
+
+∀x ∀y (is-prof(x) ∧ is-dean(y)) → (is-friend-of(y, x) ∨ ¬knows(x, y))
+From statement 3, we know that John is a professor:
+
+is-prof(John)
+From statements 2 and 3, we know that John is a dean and a person:
+
+is-person(John) ∧ is-dean(John)
+From statement 1, we know that Lucy is a person:
+
+is-person(lucy)
+Using resolution, we can combine the facts and derive the negation of the conclusion:
+
+∀y (is-prof(y) → is-person(y)) (from statement 2)
+is-prof(John) → is-person(John) (from 8 by specialization)
+is-person(John) (from 5 and 9 by modus ponens)
+is-dean(John) (from 6 by simplification)
+is-friend-of(John, John) ∨ ¬knows(John, John) (from 4 and 10 by universal instantiation)
+¬is-friend-of(John, John) (from 12 by simplification)
+∃y is-friend-of(y, lucy) (from 3 by universal instantiation)
+is-prof(lucy) → is-person(lucy) (from statement 2)
+is-person(lucy) (from 7 and 15 by modus ponens)
+is-prof(lucy) ∧ is-dean(John) (from 11 and 16)
+is-friend-of(John, lucy) ∨ ¬knows(lucy, John) (from 4 and 17 by universal instantiation)
+criticize(lucy, John) (given)
+¬is-friend-of(John, lucy) (from 2, 19, and 18 by resolution)
+Therefore, we have successfully proven that Lucy is not a friend of John using first-order predicate logic and resolution.

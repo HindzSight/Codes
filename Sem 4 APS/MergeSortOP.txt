@@ -1,0 +1,74 @@
+Enter the number of elements:1000
+Time : 1 ms
+0-Exit 
+1-Redo
+1
+Enter the number of elements:2000
+Time : 1 ms
+0-Exit
+1-Redo
+1
+Enter the number of elements:3000
+Time : 1 ms
+0-Exit
+1-Redo
+1
+Enter the number of elements:4000
+Time : 2 ms
+0-Exit
+1-Redo
+1
+Enter the number of elements:5000
+Time : 3 ms
+0-Exit
+1-Redo
+1
+Enter the number of elements:6000
+Time : 2 ms
+0-Exit
+1-Redo
+1
+Enter the number of elements:7000
+Time : 2 ms
+0-Exit
+1-Redo
+1
+Enter the number of elements:8000
+Time : 3 ms
+0-Exit
+1-Redo
+1
+Enter the number of elements:9000
+Time : 4 ms
+0-Exit
+1-Redo
+1
+Enter the number of elements:10000
+Time : 4 ms
+0-Exit
+1-Redo
+1
+Enter the number of elements:11000
+Time : 4 ms
+0-Exit
+1-Redo
+1
+Enter the number of elements:12000
+Time : 7 ms
+0-Exit
+1-Redo
+1
+Enter the number of elements:13000
+Time : 5 ms
+0-Exit
+1-Redo
+1
+Enter the number of elements:14000
+Time : 5 ms
+0-Exit
+1-Redo
+1
+Enter the number of elements:15000
+Time : 5 ms
+0-Exit
+1-Redo

@@ -1,0 +1,158 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+/*
+void LRU(int &arr[],int n,int &ans[],int m)
+{
+	if(ans[m] == -1)
+	{
+		
+	}
+	else
+	{
+		
+	}
+}
+*/
+
+int main() {
+	int arr[20];
+	cout<<"Enter the Reference String : ";
+	for(int i=0 ; i < 20 ; i++)
+	{
+		cin>>arr[i];
+	}
+	
+	int frames;
+	cout<<"Enter Number of Frames : ";
+	cin>>frames;
+	
+	int ans[frames];
+	for(int i=0;i<frames;i++)
+	{
+		ans[i]=-1;
+	}
+	
+	//LRU
+	int j=0;
+	int m=0;
+	while(j<20)
+	{
+		//LRU(arr,j,ans,frames);
+		if(ans[frames] == -1)
+		{
+			ans[m] = arr[j];
+			m++;
+		}
+		else
+		{
+			int sol[frames];
+			for(int i=j;i>=0;i--)
+			{
+				if(arr[i] == ans[0])
+				{
+					sol[0] = i;
+				}
+				if(arr[i] == ans[1])
+				{
+					sol[1] = i;
+				}
+				if(arr[i] == ans[2])
+				{
+					sol[2] = i;
+				}
+				if(arr[i] == ans[3])
+				{
+					sol[3] = i;
+				}
+			}
+			int rep = max(sol[0],max(sol[1],max(sol[2],sol[3])));
+			for(int i=0;i<frames;i++)
+			{
+				if(arr[rep] == ans[i] )
+				{
+					ans[i]=arr[j];
+				}
+			}
+		}
+		
+		
+		for(int i=0;i<frames;i++)
+		{
+			cout<<ans[i]<<endl;
+		}
+		cout<<endl;
+		j++;
+	}
+	
+		
+	return 0;
+}
+
+// 7 0 1 2 0 3 0 4 2 3 0 3 2 1 2 0 1 7 0 1
+// 70120304230321201701
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int finder(int arr[],int ans,int n,int m,int j)
+{
+    int val=0;
+    for(int i=j;i<n;i++)
+    {
+        if(ans == arr[i])
+        {
+            val=i;
+            break;
+        }
+    }
+    return val;
+}
+
+void findlast(int arr[],int n,int ans[],int m,int j)
+{
+    int indexes[m];
+    for(int i=0;i<m;i++)
+    {
+        indexes[i]=finder(arr,ans[i],n,m.j)
+    }
+    
+}
+
+int main() {
+	int arr[20];
+	cout<<"Enter the Reference String : ";
+	for(int i=0 ; i < 20 ; i++)
+	{
+		cin>>arr[i];
+	}
+
+	int frames;
+	cout<<"Enter Number of Frames : ";
+	cin>>frames;
+
+	int ans[frames];
+	for(int i=0;i<frames;i++)
+	{
+		ans[i]=-1;
+	}
+
+	int j=0;
+	int m=0;
+    while(j<20)
+    {
+        if(ans[frames-1] == -1)
+        {
+            ans[m]= arr[j];
+        }
+        else
+        {
+            //search in ref str till last occurance of the element of all values in ans
+            findlast(arr,20,ans,frames,j);
+        }
+    }
+
+	return 0;
+}
