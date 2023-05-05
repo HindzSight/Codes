@@ -20,9 +20,9 @@ int main()
         int pagesize;
         int n;
         int v_add;
-        cout<<"Enter the Virtual address:";
+        cout<<"Enter the Virtual address : ";
         cin>>v_add;
-        cout<<"Enter the page size (bytes):";
+        cout<<"Enter the page size (bytes) : ";
         cin>>pagesize;
         cout<<"Enter no of pages:";
         cin>>n;
@@ -30,7 +30,7 @@ int main()
         int n2=log2(n);
         int ans[n1+n2];
         int pagetable[n];
-        cout<<"Enter the Page table entries;";
+        cout<<"Enter the Page table entries : ";
         for(int i=0;i<n;i++)
         {
                 cin>>pagetable[i];
