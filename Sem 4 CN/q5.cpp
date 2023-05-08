@@ -11,7 +11,6 @@ int main()
     char slash = '/';
     cout << "Enter IP address (x.y.z.t/n): ";
     cin >> giv[0] >> slash >> giv[1] >> slash >> giv[2] >> slash >> giv[3] >> slash >> n;
-    // cout<<x<<y<<z<<t<<n;
     int arr[4] = {0};
     int oct = n / 8;
     int rem = n % 8;
