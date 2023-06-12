@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+#define MAX_FRAMES 10
+
+void simulateFIFO(int referenceString[], int length, int frameSize) {
+    int frames[MAX_FRAMES];
+    int frameIndex = 0;
+    int pageFaults = 0;
+    int i, j;
+
+    // Initialize frames to -1, indicating empty frames
+    for (i = 0; i < frameSize; i++) {
+        frames[i] = -1;
+    }
+
+    // Simulate page replacement
+    for (i = 0; i < length; i++) {
+        int currentPage = referenceString[i];
+        int pageFound = 0;
+
+        // Check if the page is already in a frame
+        for (j = 0; j < frameSize; j++) {
+            if (frames[j] == currentPage) {
+                pageFound = 1;
+                break;
+            }
+        }
+
+        // If the page is not found in any frame, replace the oldest page
+        if (!pageFound) {
+            frames[frameIndex] = currentPage;
+            frameIndex = (frameIndex + 1) % frameSize;
+            pageFaults++;
+        }
+
+        // Print the current state of frames
+        printf("Page %d: ", currentPage);
+        for (j = 0; j < frameSize; j++) {
+            if (frames[j] == -1) {
+                printf(" - ");
+            } else {
+                printf(" %d ", frames[j]);
+            }
+        }
+        printf("\n");
+    }
+
+    printf("Total Page Faults: %d\n", pageFaults);
+}
+
+int main() {
+    int referenceString[] = {1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5};
+    int length = sizeof(referenceString) / sizeof(referenceString[0]);
+    int frameSize;
+
+    printf("Enter the frame size: ");
+    scanf("%d", &frameSize);
+
+    simulateFIFO(referenceString, length, frameSize);
+
+    return 0;
+}
+
+
+/*************************/
+
+
