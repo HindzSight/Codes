@@ -93,9 +93,9 @@ int main()
 
     int n;
     string ref_string;
-    cout << "Enter the reference string" << endl;
+    cout << "Enter the reference string : ";
     cin >> ref_string;
-    cout << "Enter the frame number" << endl;
+    cout << "Enter the frame number : ";
     cin >> n;
 
     oprp(ref_string, n);

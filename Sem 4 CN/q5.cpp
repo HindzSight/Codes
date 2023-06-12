@@ -50,6 +50,8 @@ int main()
         cout << first_add[i];
         if (i != 3)
             cout << ".";
+        if (i == 3)
+            cout << "/"<<n;
     }
 
     int last_add[4] = {0};
@@ -67,6 +69,8 @@ int main()
         cout << last_add[i];
         if (i != 3)
             cout << ".";
+        if (i == 3)
+            cout << "/"<<n;
     }
     return 0;
 }
