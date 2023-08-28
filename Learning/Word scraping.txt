@@ -1,0 +1,28 @@
+9.00-9.55|10.00-10.55|11.00-11.55|12.00-12.55|2.00-2.55|3.00-3.55|4.00-4.55
+Mon|Tue|Wed|Thu|Fri|Sat
+
+['', '9.00-9.55', '10.00-10.55', '11.00-11.55', '12.00-12.55', '2.00-2.55', '3.00-3.55']
+['Mon', 'B5-T-CoE-CR27\n', '', 'BY-L-CoE-LT2\n', 'BY-L-AP Lab 2-LT2\n', 'B1B2B3B4B5B6-L-NS-LT2\n', '']
+['Tue', '\nBY-L-FSD-LT2', 'BY-L-ToC-LT2\n', '', 'BY-L-PTRP-LT2\n', '', '\nB5-T- PTRP–CR24']
+['Wed', 'B5B6-P-AP Lab 2 – CL5', 'B5B6-P-AP Lab 2 – CL5', 'B5B6-P-OSS Lab – CL5', 'B5B6-P-OSS Lab – CL5', 'B1B2B3B4B5B6-L-NS-LT2\n', 'B5-T- ToC-CR17']
+['Thu', 'BY-L-FSD-LT1\n', 'BY-L-ToC-LT2\n\n', '', '', '', 'BY-L-PTRP-LT1\n']
+['Fri', '', '', 'BY-L-CoE-LT2\n', 'BY-L-PTRP-LT2\n', 'B1B2B3B4B5B6-L-NS-LT2\n', '']
+['Sat', 'BY-L-FSD-LT2\n', 'BY-L-ToC-LT2\n', '', '']
+
+['9.00-9.55', '10.00-10.55', '11.00-11.55', '12.00-12.55', '2.00-2.55', '3.00-3.55', '4.00-4.55']
+['Mon', 'BX-L-PTRP-LT1 BZ-L-FSD-LT2 B5-T-CoE-CR27 B6-T- ToC-CR17', 'BY-L-CoE-LT2 B3-T- PTRP–CR24 ', 'BY-L-AP Lab 2-LT2 B3-T-ToC-CR17 B9-T- PTRP–CR24']
+['Mon']
+['Tue', 'BY-L-FSD-LT2 B9-T-CoE-CR27 B10-T- ToC-CR17', 'BY-L-ToC-LT2 B5-T- PTRP–CR24', 'BX-L-FSD-LT1 BY-L-PTRP-LT2 B9-T- ToC-CR17 B10-T-CoE-CR27']
+['Tue']
+['Wed', 'BZ-L-PTRP-LT2 B4-T-CoE-CR27 B5-T- ToC-CR17']
+['Wed', 'BZ-L-PTRP-LT2 B4-T-CoE-CR27 B5-T- ToC-CR17']
+['Thu', 'BY-L-FSD-LT1 B11-T-CoE-CR27 B12-T- ToC-CR17', 'BY-L-ToC-LT2  ', 'BY-L-PTRP-LT1 B2-T-CoE-CR27 B4-T- PTRP–CR24 ']
+['Thu']
+['Fri', 'BY-L-CoE-LT2 B2-T- PTRP–CR24 ', 'BY-L-PTRP-LT2 BZ-L-FSD-LT1 B3-T-CoE-CR27 B4-T- ToC-CR17']
+['Fri', 'BY-L-PTRP-LT2 BZ-L-FSD-LT1 B3-T-CoE-CR27 B4-T- ToC-CR17']
+['Sat', 'BZ-L-ToC-LT1 BY-L-FSD-LT2 B1-T-CoE-CR27', 'BY-L-ToC-LT2 ']
+['Sat']
+
+C:\WINDOWS\System32\cmd.exe
+
+BX-L-PTRP-LT1 BZ-L-FSD-LT2 B5-T-CoE-CR27 B6-T--ToC-CR17

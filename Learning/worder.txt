@@ -1,0 +1,383 @@
+:: Time Tablerrrrrr ::
+
+Input data :
+['', '9.00-9.55', '10.00-10.55', '11.00-11.55', '12.00-12.55', '2.00-2.55', '3.00-3.55', '4.00-4.55']
+['Mon', 'BX-L-PTRP-LT1\nBZ-L-FSD-LT2\nB5-T-CoE-CR27\nB6-T- ToC-CR17', 'BX-L-ToC-LT1', 'BY-L-CoE-LT2\nB3-T- PTRP–CR24\n', 'BY-L-AP Lab 2-LT2\nB3-T-ToC-CR17\nB9-T- PTRP–CR24', 'B1B2B3B4B5B6-L-NS-LT2\nBZ-L-ToC-LT1', 'BZ-L-PTRP-LT2\nBX-L-FSD-LT1\nB7-T-CoE-CR27', 'B-L-ANN-CR1']
+['Mon', 'B7B8-P-AP Lab 2 – CL5', 'B7B8-P-AP Lab 2 – CL5', 'B1B2-P-OSS Lab – CL5', 'B1B2-P-OSS Lab – CL5', 'B1B2B3B4B5B6-L-NS-LT2\nBZ-L-ToC-LT1', 'BZ-L-PTRP-LT2\nBX-L-FSD-LT1\nB7-T-CoE-CR27', 'B-L-ANN-CR1']
+['Tue', 'BY-L-FSD-LT2\nB9-T-CoE-CR27\nB10-T- ToC-CR17', 'BY-L-ToC-LT2\nB5-T- PTRP–CR24', 'BZ-L-CoE-LT2\nB1-T- PTRP–CR24', 'BZ-L-AP Lab 2-LT2\nB1-T- ToC -CR17', 'B7B8B9B10B11B12-L-NS-LT2\nB-L-IQC-LT-11\nB-L-MSA-CR14', 'BX-L-FSD-LT1\nBY-L-PTRP-LT2\nB9-T- ToC-CR17\nB10-T-CoE-CR27', '']
+['Tue', 'B1B2-P-AP Lab 2 – CL5', 'B1B2-P-AP Lab 2 – CL5', 'B3B4-P-OSS Lab – CL5', 'B3B4-P-OSS Lab – CL5', '', '', '']
+['Wed', 'BX-L-PTRP-LT1\nBZ-L-FSD-LT2\nB7-T-ToC-CR17\nB8-T-CoE-CR27', 'BX-L-ToC-LT1\nB7B8B9B10B11B12-L-NS -LT2', 'BZ-L-CoE-LT2\nB8-T- PTRP–CR24', 'BZ-L- ToC -LT2', 'B1B2B3B4B5B6-L-NS-LT2\nB-L-IQC--LT-11\nB-L-MSA-CR14', 'BZ-L-PTRP-LT2\nB4-T-CoE-CR27\nB5-T- ToC-CR17', 'B-L-ANN-CR1']
+['Wed', 'B5B6-P-AP Lab 2 – CL5', 'B5B6-P-AP Lab 2 – CL5', 'B5B6-P-OSS Lab – CL5', 'B5B6-P-OSS Lab – CL5', 'B1B2B3B4B5B6-L-NS-LT2\nB-L-IQC--LT-11\nB-L-MSA-CR14', 'BZ-L-PTRP-LT2\nB4-T-CoE-CR27\nB5-T- ToC-CR17', 'B-L-ANN-CR1']
+['Thu', 'BY-L-FSD-LT1\nB11-T-CoE-CR27\nB12-T- ToC-CR17', 'BY-L-ToC-LT2\n\n', 'BX-L-CoE-LT2\nB6-T- PTRP–CR24', 'BX-L-AP Lab 2-LT2\nB11-T- ToC-CR17\nB12-T- PTRP–CR24', 'B7B8B9B10B11B12-L-NS -LT2\nB-L-IQC--LT-11\nB-L-MSA-CR14', 'BY-L-PTRP-LT1\nB2-T-CoE-CR27\nB4-T- PTRP–CR24\n', '\n']
+['Thu', 'B9B10-P-AP Lab 2 – CL5', 'B9B10-P-AP Lab 2 – CL5', 'B7B8-P-OSS Lab – CL5', 'B7B8-P-OSS Lab – CL5', '', '', '']
+['Fri', 'BX-L-PTRP-LT1\nB6-T-CoE-CR27 B8-T- ToC-CR17', 'BX-L-ToC-LT1', 'BY-L-CoE-LT2\nB2-T- PTRP–CR24\n', 'B2-T- ToC CR17\nB11-T- PTRP–CR24\n B12-T-CoE-CR27', '\nB1B2B3B4B5B6-L-NS-LT2\nBZ-L-PTRP-LT1', 'BY-L-PTRP-LT2\nBZ-L-FSD-LT1\nB3-T-CoE-CR27\nB4-T- ToC-CR17', 'B-L-ANN-CR1']
+['Fri', 'B11B12-P-AP Lab 2 – CL5', 'B11B12-P-AP Lab 2 – CL5', 'B9B10-P-OSS Lab – CL5', 'B9B10-P-OSS Lab – CL5', '\nB1B2B3B4B5B6-L-NS-LT2\nBZ-L-PTRP-LT1', 'BY-L-PTRP-LT2\nBZ-L-FSD-LT1\nB3-T-CoE-CR27\nB4-T- ToC-CR17', 'B-L-ANN-CR1']
+['Sat', 'BZ-L-ToC-LT1\nBY-L-FSD-LT2\nB1-T-CoE-CR27', 'BY-L-ToC-LT2\n', 'BX-L-CoE-LT2\nB7-T- PTRP–CR24', 'BX-L-FSD-LT2\nB7-T- ToC-CR17\nB10-T- PTRP–CR24', '', '', '']
+['Sat', 'B3B4-P-AP Lab 2 – CL5', 'B3B4-P-AP Lab 2 – CL5', 'B11B12-P-OSS Lab – CL5', 'B11B12-P-OSS Lab – CL5', '', '', '']
+
+Time Schedule :
+
+CELL DATA            :::
+DATA POINT           :::
+CELL DATA            :::  9.00-9.55
+DATA POINT           :::  9.00-9.55
+DATA POINT AFTER     :::  9.00-9.55
+CELL DATA            :::  10.00-10.55
+DATA POINT           :::  10.00-10.55
+DATA POINT AFTER     :::  10.00-10.55
+CELL DATA            :::  11.00-11.55
+DATA POINT           :::  11.00-11.55
+DATA POINT AFTER     :::  11.00-11.55
+CELL DATA            :::  12.00-12.55
+DATA POINT           :::  12.00-12.55
+DATA POINT AFTER     :::  12.00-12.55
+CELL DATA            :::  2.00-2.55
+DATA POINT           :::  2.00-2.55
+DATA POINT AFTER     :::  2.00-2.55
+CELL DATA            :::  3.00-3.55
+DATA POINT           :::  3.00-3.55
+DATA POINT AFTER     :::  3.00-3.55
+CELL DATA            :::  4.00-4.55
+DATA POINT           :::  4.00-4.55
+DATA POINT AFTER     :::  4.00-4.55
+
+-------------------------
+CELL DATA            :::  Mon
+DATA POINT           :::  Mon
+DATA POINT AFTER     :::  Mon
+CELL DATA            :::  BX-L-PTRP-LT1
+BZ-L-FSD-LT2
+B5-T-CoE-CR27
+B6-T- ToC-CR17
+DATA POINT           :::  BX-L-PTRP-LT1 BZ-L-FSD-LT2 B5-T-CoE-CR27 B6-T--ToC-CR17
+DATA POINT AFTER     :::  BX-L-PTRP-LT1 BZ-L-FSD-LT2 B5-T-CoE-CR27 B6-T--ToC-CR17
+CELL DATA            :::  BX-L-ToC-LT1
+DATA POINT           :::  BX-L-ToC-LT1
+CELL DATA            :::  BY-L-CoE-LT2
+B3-T- PTRP–CR24
+
+DATA POINT           :::  BY-L-CoE-LT2 B3-T--PTRP–CR24
+DATA POINT AFTER     :::  BY-L-CoE-LT2 B3-T--PTRP–CR24
+CELL DATA            :::  BY-L-AP Lab 2-LT2
+B3-T-ToC-CR17
+B9-T- PTRP–CR24
+DATA POINT           :::  BY-L-AP-Lab-2-LT2 B3-T-ToC-CR17 B9-T--PTRP–CR24
+DATA POINT AFTER     :::  BY-L-AP-Lab-2-LT2 B3-T-ToC-CR17 B9-T--PTRP–CR24
+CELL DATA            :::  B1B2B3B4B5B6-L-NS-LT2
+BZ-L-ToC-LT1
+DATA POINT           :::  B1B2B3B4B5B6-L-NS-LT2 BZ-L-ToC-LT1
+CELL DATA            :::  BZ-L-PTRP-LT2
+BX-L-FSD-LT1
+B7-T-CoE-CR27
+DATA POINT           :::  BZ-L-PTRP-LT2 BX-L-FSD-LT1 B7-T-CoE-CR27
+CELL DATA            :::  B-L-ANN-CR1
+DATA POINT           :::  B-L-ANN-CR1
+
+-------------------------
+CELL DATA            :::  Mon
+DATA POINT           :::  Mon
+DATA POINT AFTER     :::  Mon
+CELL DATA            :::  B7B8-P-AP Lab 2 – CL5
+DATA POINT           :::  B7B8-P-AP-Lab-2-–-CL5
+CELL DATA            :::  B7B8-P-AP Lab 2 – CL5
+DATA POINT           :::  B7B8-P-AP-Lab-2-–-CL5
+CELL DATA            :::  B1B2-P-OSS Lab – CL5
+DATA POINT           :::  B1B2-P-OSS-Lab-–-CL5
+CELL DATA            :::  B1B2-P-OSS Lab – CL5
+DATA POINT           :::  B1B2-P-OSS-Lab-–-CL5
+CELL DATA            :::  B1B2B3B4B5B6-L-NS-LT2
+BZ-L-ToC-LT1
+DATA POINT           :::  B1B2B3B4B5B6-L-NS-LT2 BZ-L-ToC-LT1
+CELL DATA            :::  BZ-L-PTRP-LT2
+BX-L-FSD-LT1
+B7-T-CoE-CR27
+DATA POINT           :::  BZ-L-PTRP-LT2 BX-L-FSD-LT1 B7-T-CoE-CR27
+CELL DATA            :::  B-L-ANN-CR1
+DATA POINT           :::  B-L-ANN-CR1
+
+-------------------------
+CELL DATA            :::  Tue
+DATA POINT           :::  Tue
+DATA POINT AFTER     :::  Tue
+CELL DATA            :::  BY-L-FSD-LT2
+B9-T-CoE-CR27
+B10-T- ToC-CR17
+DATA POINT           :::  BY-L-FSD-LT2 B9-T-CoE-CR27 B10-T--ToC-CR17
+DATA POINT AFTER     :::  BY-L-FSD-LT2 B9-T-CoE-CR27 B10-T--ToC-CR17
+CELL DATA            :::  BY-L-ToC-LT2
+B5-T- PTRP–CR24
+DATA POINT           :::  BY-L-ToC-LT2 B5-T--PTRP–CR24
+DATA POINT AFTER     :::  BY-L-ToC-LT2 B5-T--PTRP–CR24
+CELL DATA            :::  BZ-L-CoE-LT2
+B1-T- PTRP–CR24
+DATA POINT           :::  BZ-L-CoE-LT2 B1-T--PTRP–CR24
+CELL DATA            :::  BZ-L-AP Lab 2-LT2
+B1-T- ToC -CR17
+DATA POINT           :::  BZ-L-AP-Lab-2-LT2 B1-T--ToC--CR17
+CELL DATA            :::  B7B8B9B10B11B12-L-NS-LT2
+B-L-IQC-LT-11
+B-L-MSA-CR14
+DATA POINT           :::  B7B8B9B10B11B12-L-NS-LT2 B-L-IQC-LT-11 B-L-MSA-CR14
+CELL DATA            :::  BX-L-FSD-LT1
+BY-L-PTRP-LT2
+B9-T- ToC-CR17
+B10-T-CoE-CR27
+DATA POINT           :::  BX-L-FSD-LT1 BY-L-PTRP-LT2 B9-T--ToC-CR17 B10-T-CoE-CR27
+DATA POINT AFTER     :::  BX-L-FSD-LT1 BY-L-PTRP-LT2 B9-T--ToC-CR17 B10-T-CoE-CR27
+CELL DATA            :::
+DATA POINT           :::
+
+-------------------------
+CELL DATA            :::  Tue
+DATA POINT           :::  Tue
+DATA POINT AFTER     :::  Tue
+CELL DATA            :::  B1B2-P-AP Lab 2 – CL5
+DATA POINT           :::  B1B2-P-AP-Lab-2-–-CL5
+CELL DATA            :::  B1B2-P-AP Lab 2 – CL5
+DATA POINT           :::  B1B2-P-AP-Lab-2-–-CL5
+CELL DATA            :::  B3B4-P-OSS Lab – CL5
+DATA POINT           :::  B3B4-P-OSS-Lab-–-CL5
+CELL DATA            :::  B3B4-P-OSS Lab – CL5
+DATA POINT           :::  B3B4-P-OSS-Lab-–-CL5
+CELL DATA            :::
+DATA POINT           :::
+CELL DATA            :::
+DATA POINT           :::
+CELL DATA            :::
+DATA POINT           :::
+
+-------------------------
+CELL DATA            :::  Wed
+DATA POINT           :::  Wed
+DATA POINT AFTER     :::  Wed
+CELL DATA            :::  BX-L-PTRP-LT1
+BZ-L-FSD-LT2
+B7-T-ToC-CR17
+B8-T-CoE-CR27
+DATA POINT           :::  BX-L-PTRP-LT1 BZ-L-FSD-LT2 B7-T-ToC-CR17 B8-T-CoE-CR27
+CELL DATA            :::  BX-L-ToC-LT1
+B7B8B9B10B11B12-L-NS -LT2
+DATA POINT           :::  BX-L-ToC-LT1 B7B8B9B10B11B12-L-NS--LT2
+CELL DATA            :::  BZ-L-CoE-LT2
+B8-T- PTRP–CR24
+DATA POINT           :::  BZ-L-CoE-LT2 B8-T--PTRP–CR24
+CELL DATA            :::  BZ-L- ToC -LT2
+DATA POINT           :::  BZ-L--ToC--LT2
+CELL DATA            :::  B1B2B3B4B5B6-L-NS-LT2
+B-L-IQC--LT-11
+B-L-MSA-CR14
+DATA POINT           :::  B1B2B3B4B5B6-L-NS-LT2 B-L-IQC--LT-11 B-L-MSA-CR14
+CELL DATA            :::  BZ-L-PTRP-LT2
+B4-T-CoE-CR27
+B5-T- ToC-CR17
+DATA POINT           :::  BZ-L-PTRP-LT2 B4-T-CoE-CR27 B5-T--ToC-CR17
+DATA POINT AFTER     :::  BZ-L-PTRP-LT2 B4-T-CoE-CR27 B5-T--ToC-CR17
+CELL DATA            :::  B-L-ANN-CR1
+DATA POINT           :::  B-L-ANN-CR1
+
+-------------------------
+CELL DATA            :::  Wed
+DATA POINT           :::  Wed
+DATA POINT AFTER     :::  Wed
+CELL DATA            :::  B5B6-P-AP Lab 2 – CL5
+DATA POINT           :::  B5B6-P-AP-Lab-2-–-CL5
+CELL DATA            :::  B5B6-P-AP Lab 2 – CL5
+DATA POINT           :::  B5B6-P-AP-Lab-2-–-CL5
+CELL DATA            :::  B5B6-P-OSS Lab – CL5
+DATA POINT           :::  B5B6-P-OSS-Lab-–-CL5
+CELL DATA            :::  B5B6-P-OSS Lab – CL5
+DATA POINT           :::  B5B6-P-OSS-Lab-–-CL5
+CELL DATA            :::  B1B2B3B4B5B6-L-NS-LT2
+B-L-IQC--LT-11
+B-L-MSA-CR14
+DATA POINT           :::  B1B2B3B4B5B6-L-NS-LT2 B-L-IQC--LT-11 B-L-MSA-CR14
+CELL DATA            :::  BZ-L-PTRP-LT2
+B4-T-CoE-CR27
+B5-T- ToC-CR17
+DATA POINT           :::  BZ-L-PTRP-LT2 B4-T-CoE-CR27 B5-T--ToC-CR17
+DATA POINT AFTER     :::  BZ-L-PTRP-LT2 B4-T-CoE-CR27 B5-T--ToC-CR17
+CELL DATA            :::  B-L-ANN-CR1
+DATA POINT           :::  B-L-ANN-CR1
+
+-------------------------
+CELL DATA            :::  Thu
+DATA POINT           :::  Thu
+DATA POINT AFTER     :::  Thu
+CELL DATA            :::  BY-L-FSD-LT1
+B11-T-CoE-CR27
+B12-T- ToC-CR17
+DATA POINT           :::  BY-L-FSD-LT1 B11-T-CoE-CR27 B12-T--ToC-CR17
+DATA POINT AFTER     :::  BY-L-FSD-LT1 B11-T-CoE-CR27 B12-T--ToC-CR17
+CELL DATA            :::  BY-L-ToC-LT2
+
+
+DATA POINT           :::  BY-L-ToC-LT2
+DATA POINT AFTER     :::  BY-L-ToC-LT2
+CELL DATA            :::  BX-L-CoE-LT2
+B6-T- PTRP–CR24
+DATA POINT           :::  BX-L-CoE-LT2 B6-T--PTRP–CR24
+CELL DATA            :::  BX-L-AP Lab 2-LT2
+B11-T- ToC-CR17
+B12-T- PTRP–CR24
+DATA POINT           :::  BX-L-AP-Lab-2-LT2 B11-T--ToC-CR17 B12-T--PTRP–CR24
+CELL DATA            :::  B7B8B9B10B11B12-L-NS -LT2
+B-L-IQC--LT-11
+B-L-MSA-CR14
+DATA POINT           :::  B7B8B9B10B11B12-L-NS--LT2 B-L-IQC--LT-11 B-L-MSA-CR14
+CELL DATA            :::  BY-L-PTRP-LT1
+B2-T-CoE-CR27
+B4-T- PTRP–CR24
+
+DATA POINT           :::  BY-L-PTRP-LT1 B2-T-CoE-CR27 B4-T--PTRP–CR24
+DATA POINT AFTER     :::  BY-L-PTRP-LT1 B2-T-CoE-CR27 B4-T--PTRP–CR24
+CELL DATA            :::
+
+DATA POINT           :::
+
+-------------------------
+CELL DATA            :::  Thu
+DATA POINT           :::  Thu
+DATA POINT AFTER     :::  Thu
+CELL DATA            :::  B9B10-P-AP Lab 2 – CL5
+DATA POINT           :::  B9B10-P-AP-Lab-2-–-CL5
+CELL DATA            :::  B9B10-P-AP Lab 2 – CL5
+DATA POINT           :::  B9B10-P-AP-Lab-2-–-CL5
+CELL DATA            :::  B7B8-P-OSS Lab – CL5
+DATA POINT           :::  B7B8-P-OSS-Lab-–-CL5
+CELL DATA            :::  B7B8-P-OSS Lab – CL5
+DATA POINT           :::  B7B8-P-OSS-Lab-–-CL5
+CELL DATA            :::
+DATA POINT           :::  
+CELL DATA            :::
+DATA POINT           :::
+CELL DATA            :::
+DATA POINT           :::
+
+-------------------------
+CELL DATA            :::  Fri
+DATA POINT           :::  Fri
+DATA POINT AFTER     :::  Fri
+CELL DATA            :::  BX-L-PTRP-LT1
+B6-T-CoE-CR27 B8-T- ToC-CR17
+DATA POINT           :::  BX-L-PTRP-LT1 B6-T-CoE-CR27-B8-T--ToC-CR17
+CELL DATA            :::  BX-L-ToC-LT1
+DATA POINT           :::  BX-L-ToC-LT1
+CELL DATA            :::  BY-L-CoE-LT2
+B2-T- PTRP–CR24
+
+DATA POINT           :::  BY-L-CoE-LT2 B2-T--PTRP–CR24
+DATA POINT AFTER     :::  BY-L-CoE-LT2 B2-T--PTRP–CR24
+CELL DATA            :::  B2-T- ToC CR17
+B11-T- PTRP–CR24
+ B12-T-CoE-CR27
+DATA POINT           :::  B2-T--ToC-CR17 B11-T--PTRP–CR24 -B12-T-CoE-CR27
+CELL DATA            :::
+B1B2B3B4B5B6-L-NS-LT2
+BZ-L-PTRP-LT1
+DATA POINT           :::   B1B2B3B4B5B6-L-NS-LT2 BZ-L-PTRP-LT1
+CELL DATA            :::  BY-L-PTRP-LT2
+BZ-L-FSD-LT1
+B3-T-CoE-CR27
+B4-T- ToC-CR17
+DATA POINT           :::  BY-L-PTRP-LT2 BZ-L-FSD-LT1 B3-T-CoE-CR27 B4-T--ToC-CR17
+DATA POINT AFTER     :::  BY-L-PTRP-LT2 BZ-L-FSD-LT1 B3-T-CoE-CR27 B4-T--ToC-CR17
+CELL DATA            :::  B-L-ANN-CR1
+DATA POINT           :::  B-L-ANN-CR1
+
+-------------------------
+CELL DATA            :::  Fri
+DATA POINT           :::  Fri
+DATA POINT AFTER     :::  Fri
+CELL DATA            :::  B11B12-P-AP Lab 2 – CL5
+DATA POINT           :::  B11B12-P-AP-Lab-2-–-CL5
+CELL DATA            :::  B11B12-P-AP Lab 2 – CL5
+DATA POINT           :::  B11B12-P-AP-Lab-2-–-CL5
+CELL DATA            :::  B9B10-P-OSS Lab – CL5
+DATA POINT           :::  B9B10-P-OSS-Lab-–-CL5
+CELL DATA            :::  B9B10-P-OSS Lab – CL5
+DATA POINT           :::  B9B10-P-OSS-Lab-–-CL5
+CELL DATA            :::
+B1B2B3B4B5B6-L-NS-LT2
+BZ-L-PTRP-LT1
+DATA POINT           :::   B1B2B3B4B5B6-L-NS-LT2 BZ-L-PTRP-LT1
+CELL DATA            :::  BY-L-PTRP-LT2
+BZ-L-FSD-LT1
+B3-T-CoE-CR27
+B4-T- ToC-CR17
+DATA POINT           :::  BY-L-PTRP-LT2 BZ-L-FSD-LT1 B3-T-CoE-CR27 B4-T--ToC-CR17
+DATA POINT AFTER     :::  BY-L-PTRP-LT2 BZ-L-FSD-LT1 B3-T-CoE-CR27 B4-T--ToC-CR17
+CELL DATA            :::  B-L-ANN-CR1
+DATA POINT           :::  B-L-ANN-CR1
+
+-------------------------
+CELL DATA            :::  Sat
+DATA POINT           :::  Sat
+DATA POINT AFTER     :::  Sat
+CELL DATA            :::  BZ-L-ToC-LT1
+BY-L-FSD-LT2
+B1-T-CoE-CR27
+DATA POINT           :::  BZ-L-ToC-LT1 BY-L-FSD-LT2 B1-T-CoE-CR27
+DATA POINT AFTER     :::  BZ-L-ToC-LT1 BY-L-FSD-LT2 B1-T-CoE-CR27
+CELL DATA            :::  BY-L-ToC-LT2
+
+DATA POINT           :::  BY-L-ToC-LT2
+DATA POINT AFTER     :::  BY-L-ToC-LT2
+CELL DATA            :::  BX-L-CoE-LT2
+B7-T- PTRP–CR24
+DATA POINT           :::  BX-L-CoE-LT2 B7-T--PTRP–CR24
+CELL DATA            :::  BX-L-FSD-LT2
+B7-T- ToC-CR17
+B10-T- PTRP–CR24
+DATA POINT           :::  BX-L-FSD-LT2 B7-T--ToC-CR17 B10-T--PTRP–CR24
+CELL DATA            :::
+DATA POINT           :::
+CELL DATA            :::
+DATA POINT           :::
+CELL DATA            :::
+DATA POINT           :::
+
+-------------------------
+CELL DATA            :::  Sat
+DATA POINT           :::  Sat
+DATA POINT AFTER     :::  Sat
+CELL DATA            :::  B3B4-P-AP Lab 2 – CL5
+DATA POINT           :::  B3B4-P-AP-Lab-2-–-CL5
+CELL DATA            :::  B3B4-P-AP Lab 2 – CL5
+DATA POINT           :::  B3B4-P-AP-Lab-2-–-CL5
+CELL DATA            :::  B11B12-P-OSS Lab – CL5
+DATA POINT           :::  B11B12-P-OSS-Lab-–-CL5
+CELL DATA            :::  B11B12-P-OSS Lab – CL5
+DATA POINT           :::  B11B12-P-OSS-Lab-–-CL5
+CELL DATA            :::
+DATA POINT           :::
+CELL DATA            :::
+DATA POINT           :::
+CELL DATA            :::
+DATA POINT           :::
+
+-------------------------
+Output table after processing :
+['9.00-9.55', '10.00-10.55', '11.00-11.55', '12.00-12.55', '2.00-2.55', '3.00-3.55', '4.00-4.55']
+['Mon', 'BX-L-PTRP-LT1 BZ-L-FSD-LT2 B5-T-CoE-CR27 B6-T--ToC-CR17', 'BY-L-CoE-LT2 B3-T--PTRP–CR24 ', 'BY-L-AP-Lab-2-LT2 B3-T-ToC-CR17 B9-T--PTRP–CR24']
+['Mon']
+['Tue', 'BY-L-FSD-LT2 B9-T-CoE-CR27 B10-T--ToC-CR17', 'BY-L-ToC-LT2 B5-T--PTRP–CR24', 'BX-L-FSD-LT1 BY-L-PTRP-LT2 B9-T--ToC-CR17 B10-T-CoE-CR27']
+['Tue']
+['Wed', 'BZ-L-PTRP-LT2 B4-T-CoE-CR27 B5-T--ToC-CR17']
+['Wed', 'BZ-L-PTRP-LT2 B4-T-CoE-CR27 B5-T--ToC-CR17']
+['Thu', 'BY-L-FSD-LT1 B11-T-CoE-CR27 B12-T--ToC-CR17', 'BY-L-ToC-LT2  ', 'BY-L-PTRP-LT1 B2-T-CoE-CR27 B4-T--PTRP–CR24 ']
+['Thu']
+['Fri', 'BY-L-CoE-LT2 B2-T--PTRP–CR24 ', 'BY-L-PTRP-LT2 BZ-L-FSD-LT1 B3-T-CoE-CR27 B4-T--ToC-CR17']
+['Fri', 'BY-L-PTRP-LT2 BZ-L-FSD-LT1 B3-T-CoE-CR27 B4-T--ToC-CR17']
+['Sat', 'BZ-L-ToC-LT1 BY-L-FSD-LT2 B1-T-CoE-CR27', 'BY-L-ToC-LT2 ']
+['Sat']
+
+
+REAL OUTPUT TO BE :
+
+['', '9.00-9.55', '10.00-10.55', '11.00-11.55', '12.00-12.55', '2.00-2.55', '3.00-3.55']
+['Mon', 'B5-T-CoE-CR27\n', '', 'BY-L-CoE-LT2\n', 'BY-L-AP Lab 2-LT2\n', 'B1B2B3B4B5B6-L-NS-LT2\n', '']
+['Tue', '\nBY-L-FSD-LT2', 'BY-L-ToC-LT2\n', '', 'BY-L-PTRP-LT2\n', '', '\nB5-T- PTRP–CR24']
+['Wed', 'B5B6-P-AP Lab 2 – CL5', 'B5B6-P-AP Lab 2 – CL5', 'B5B6-P-OSS Lab – CL5', 'B5B6-P-OSS Lab – CL5', 'B1B2B3B4B5B6-L-NS-LT2\n', 'B5-T- ToC-CR17']
+['Thu', 'BY-L-FSD-LT1\n', 'BY-L-ToC-LT2\n\n', '', '', '', 'BY-L-PTRP-LT1\n']
+['Fri', '', '', 'BY-L-CoE-LT2\n', 'BY-L-PTRP-LT2\n', 'B1B2B3B4B5B6-L-NS-LT2\n', '']
+['Sat', 'BY-L-FSD-LT2\n', 'BY-L-ToC-LT2\n', '', '']
