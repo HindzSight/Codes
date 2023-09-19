@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 2</title>
+</head>
+
+<body>
+    <style>
+        table,
+        td,
+        tr,
+        td {
+            border: 1.15px solid black;
+            text-align: center;
+        }
+        
+        table {
+            width: 80%;
+            aspect-ratio: 2/1;
+        }
+    </style>
+    <table>
+        <tr>
+            <td colspan="3">1</td>
+            <td rowspan="3">2</td>
+            <td>3</td>
+            <td rowspan="5">4</td>
+            <td colspan="2" rowspan="2">5</td>
+        </tr> <!-- Row1 -->
+        <tr>
+            <td colspan="2">6</td>
+            <td>7</td>
+            <td rowspan="3">8</td>
+        </tr> <!-- Row2 -->
+        <tr>
+            <td>9</td>
+            <td colspan="2">10</td>
+            <td rowspan="2">11</td>
+            <td rowspan="4">12</td>
+        </tr> <!-- Row3 -->
+        <tr>
+            <td rowspan="3">13</td>
+            <td>14</td>
+            <td colspan="2">15</td>
+        </tr> <!-- Row4 -->
+        <tr>
+            <td rowspan="3">16</td>
+            <td>17</td>
+            <td>18</td>
+            <td rowspan="2">19</td>
+            <td>20</td>
+        </tr><!-- Row5 -->
+        <tr>
+            <td colspan="2">21</td>
+            <td colspan="2" rowspan="2">22</td>
+        </tr> <!-- Row6 -->
+        <tr>
+            <td>23</td>
+            <td>24</td>
+            <td colspan="2">25</td>
+            <td>26</td>
+        </tr> <!-- Row7 -->
+    </table>
+</body>
+
+</html>
