@@ -73,3 +73,8 @@ for data in batchBY:
     print(data)
 # print(batchBY)
     
+def foo():
+    n = 1
+    sum = n+1;
+    return sum
+
