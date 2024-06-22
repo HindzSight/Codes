@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestingShit</title>
+    <script>
+        function myFun(val){
+            console.log("HEllo"+val);
+        }
+        
+        function debounce(callback,val,delay){
+            let timerId;
+            return function(){
+                clearTimeout(timerId);
+                timerId = setTimeout(function(){
+                    callback(val);
+                },delay);
+            }
+        }
+        function throttle(){
+            let isTimeout = false;
+            return function(){
+                if(!isTimeout){
+                    console.log("Throttled");
+                    isTimeout = true;
+                    setTimeout(()=>{
+                        isTimeout = false;
+                    },2000);
+                }
+            }
+        }
+        
+    </script>
+    <style>
+        div{
+            width: 320px;
+            padding: 10px;
+            border: 5px solid gray;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" id="btn" value="click">
+    <div>testawsdawdsdawdadwawdasdawdasdawdaawdasdawawdasdawdwdasdaw</div>
+    <input type="button" id = "btn2" value=THORTTLE">
+    <script>
+        let debouncedFun = debounce(myFun,"help",300);
+        document.getElementById("btn").addEventListener("click",debouncedFun);
+        let handle = document.querySelector('#btn2')
+        handle.addEventListener("click",throttle);
+
+    </script>
+    
+</body>
+</html>

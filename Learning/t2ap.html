@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Java Script Test
+</title>
+<body>
+	<h1 id="h1"></h1>
+	<p class = "para" id = "p1">asdad</p>
+	<p class = "para">asasdaddad</p>
+	<p class = "para">asdad</p>
+    <script>
+	// var x = 3;
+	// console.log(x);
+
+	// y = "3";
+	// z = "3";
+
+	// ar = [3,12,123123];
+	// console.log(typeof ar)
+	
+	// ar1 ={name:"Manan Jain",batch:"B5"};
+	// console.log(typeof ar1);	
+
+	// n = null;
+	// console.log(typeof n)
+
+	// //console.log(y+z);
+	
+	// function hello(){
+	// alert("Hello");
+	// }
+	// console.log(typeof hello);	
+
+	// var tf = true;
+	// console.log(typeof tf);
+
+	// console.log(typeof(x + y));
+
+	// var j;
+	// console.log(typeof j);
+
+	// console.log(typeof(y - z));
+
+// Arrow Functions::
+
+	const a = 1231;
+	const b = 6789;
+
+	function sum(a,b){
+		console.log(a+b);
+	}
+	sum(a,b);
+
+	let sum2 = (a,b) => a+b;
+
+	document.addEventListener('click' , function(){
+		console.log('Click!');
+	})
+
+	document.addEventListener('click',() => console.log('Clicked!'));
+	sum2();
+
+//Location tests::
+
+	const loc = location;
+	console.log(loc.href);
+	console.log(loc.port);
+	console.log(loc.host);
+
+//	let count = 5 ;
+//	setInterval(function(){
+//		if(count > 0)
+//			document.getElementById('h1').innerHTML = "Redirection in T-"+count-- +" seconds";
+//		else{
+//			location.assign("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+//		}
+//	},1000);
+//
+//	setInterval(() => {history.go(-1);},2500);
+
+	( a => 
+		console.log(`Hello`)
+	)();
+
+
+	//console.log(typeof(y++ + z));
+	//console.log('3 + "3"');
+	//console.log(x + y);
+	//console.log(y++ - z);
+	//var element = document.getElementsByClassName('noselect')[0].outerText;
+
+	/*
+
+	let hello;
+let x = "Yo";
+let y = "bro!";
+
+// *********************
+// function expression
+// *********************
+
+hello = function() {
+  return "Hello World!";
+}
+console.log(hello());
+
+// *********************
+// arrow function
+// *********************
+
+hello = () => "Hello World!";
+console.log(hello());
+ 
+// *********************
+// arrow function w/ 1 argument
+// *********************
+
+hello = x => x + "World!";
+console.log(hello(x));
+ 
+// *********************
+// arrow function w/ multiple arguments
+// *********************
+
+hello = (x,y) => x + y;
+console.log(hello(x, y));
+ 
+// *********************
+// arrow function w/ multiple lines
+// *********************
+
+hello = (x,y) => {
+    console.log(x);
+    console.log(y);
+};
+hello(x,y);
+ 
+// *********************
+// MAP
+// *********************
+
+let storeUSD = [5, 6, 7, 8, 9];
+let storeEUR;
+ 
+storeEUR = storeUSD.map(value => value *= 0.84);
+console.log(storeEUR);
+ 
+// *********************
+// FILTER
+// *********************
+
+let students = [16, 17, 18, 19, 20];
+let adultStudents;
+ 
+adultStudents = students.filter(age => age >= 18);
+console.log(adultStudents);
+ 
+// *********************
+// REDUCE
+// *********************
+
+let letters = ["H", "E", "L", "P"];
+let word;
+ 
+word = letters.reduce((total, nextLetter) => total + nextLetter);
+console.log(word);
+
+	*/
+
+    </script>	
+</body>
+</html>
