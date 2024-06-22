@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <style>
+        #button{
+            background-color: aqua;
+            display: inline-block;
+            padding: 0 10 0 10;
+            border-radius: 20px;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body id = "bodddy">
+    <div id = "button"><p>CLICK ME!</p></div>
+    <!-- <button id = "button">Click this</button> -->
+    <script>
+        var f = 0;
+        var ele = document.getElementById('button');
+        var b = document.getElementById('bodddy');
+        ele.addEventListener('click',() => {
+            if(f == 0){
+                ele.style.fontSize = 32;
+                ele.style.color = 'pink';
+                b.style.backgroundColor = 'black';
+                f = 1;
+            }else{
+                ele.style.fontSize = 16;
+                ele.style.color = 'green';
+                f = 0;
+                b.style.backgroundColor = 'white';
+            }
+        })
+
+    </script>
+</body>
+</html>
