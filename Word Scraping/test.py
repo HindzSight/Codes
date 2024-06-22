@@ -1,8 +1,8 @@
 from docx import Document
 import re
 
-wordDoc = Document('E:\Download\Timetable.docx')
-doc2 = Document('E:\Download\BTech5semCSE.docx')
+wordDoc = Document('Z:\Download\Timetable.docx')
+doc2 = Document('Z:\Download\BTech5semCSE.docx')
 
 print(":: Time Tablerrrrrr ::\n")
 
@@ -42,24 +42,26 @@ patt_5 = r'^[BYB5]\w+'
 patt_L = r'\bBY.\b'
 patt_ex= r'\bB5.\b'
 patt_p = r'\bB1B2B3B4B5B6.\b'
-
+patt_study = r'^((B5|B1B2B3B4B5B6|BY)|((9\.00-9\.55|10\.00-10\.55|11\.00-11\.55|12\.00-12\.55|2\.00-2\.55|3\.00-3\.55|4\.00-4\.55)|Mon|Tue|Wed|Thu|Fri|Sat))'
+trial = r'((BY)|(B5)|(B1B2B3B4B5B6)|(((9\.00-9\.55|10\.00-10\.55|11\.00-11\.55|12\.00-12\.55|2\.00-2\.55|3\.00-3\.55|4\.00-4\.55)|Mon|Tue|Wed|Thu|Fri|Sat)))'
+trial2 = r'(BY)|(B5)|(B1B2B3B4B5B6)|(((9\.00-9\.55|10\.00-10\.55|11\.00-11\.55|12\.00-12\.55|2\.00-2\.55|3\.00-3\.55|4\.00-4\.55)|Mon|Tue|Wed|Thu|Fri|Sat))'
+trial3 = r'(BY\S+)|(B5\S+)|(B1B2B3B4B5B6\S+)|(((9\.00-9\.55|10\.00-10\.55|11\.00-11\.55|12\.00-12\.55|2\.00-2\.55|3\.00-3\.55|4\.00-4\.55)|Mon|Tue|Wed|Thu|Fri|Sat))'
+lecture_pattern = r'\b(B5|BY|B1B2B3B4B5B6)\S*\b'
 
 
 for row_data in time_table_data:
-    found_batch = False
     batchBYrow = []
     for cell_data in row_data:
-        # if re.search(r'\b(BY|B[5-8])\b', cell_data):
-        print('CELL DATA            ::: ',cell_data)
+        found_batch = False
         cell_data = cell_data.replace(' ','-')
         cell_data = cell_data.replace('\n', ' ')
-        print('DATA POINT           ::: ',cell_data)
-        if re.search(patt_1, cell_data) :
+        # print('DATA POINT           ::: ',cell_data)
+        if re.search(trial3, cell_data) :
             # match = re.search(patt_1,cell_data)
             found_batch = True
-            # print(cell_data)
+            # print(match.group())
             batchBYrow.append(cell_data)
-            print('DATA POINT AFTER     ::: ',cell_data)
+            # print('DATA POINT AFTER     ::: ',cell_data)
     batchBY.append(batchBYrow)
     
     if not found_batch:
@@ -73,8 +75,3 @@ for data in batchBY:
     print(data)
 # print(batchBY)
     
-def foo():
-    n = 1
-    sum = n+1;
-    return sum
-
